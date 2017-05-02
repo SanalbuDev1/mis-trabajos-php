@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<h1>Galeria OWL CAROUSEL V2</h1>
+	<hr>
+	
+	<section class="owl-carousel owl-theme animate">
+		<img src="imgs/sl1.jpg" alt="">
+		<img src="imgs/sl6.jpg" alt="">
+		<img src="imgs/sl3.jpg" alt="">
+		<img src="imgs/sl4.jpg" alt="">
+		<img src="imgs/sl5.jpg" alt="">
+
+	</section>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:true,
+				items:1,
+				animateOut: 'slideOutDown',
+   			    animateIn: 'flipInX',
+   			    stagePadding:30,
+    			smartSpeed:450
+			});
+		});
+	</script>
+</body>
+</html>

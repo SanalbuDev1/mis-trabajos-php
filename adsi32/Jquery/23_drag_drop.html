@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.circle{
+			background-color: #7A512D;
+			width: 120px;
+			height: 120px;
+			border-radius:120px;
+			
+		}
+		.square{
+			background-color: #7A519D;
+			width: 120px;
+			height: 120px;
+			
+			
+		}
+		.target{
+			background-color: orange;
+			width: 320px;
+			height: 320px;
+			border-radius:160px;
+			
+		}
+	</style>
+	<h1>arrastrar / soltar jQuery ui</h1>
+	<hr>
+	<section class="circle"></section>
+	<section class="target"></section>
+	<section class="square"></section>
+
+	
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js" ></script>
+	<script>
+		$(document).ready(function() {
+			$('.circle , .square').draggable({
+				cursor:'move',
+				revert: 'invalid'
+			})
+
+			$('.target').droppable({
+
+				accept:".circle,.square",
+
+				drop:function(event,ui){
+					$(this).css('background-color',"black");
+					$(this).css('transition',"all 1s ease-in");
+
+					$(ui.draggable).css('background-color','#fff');
+
+				}
+			})
+
+
+		});
+	</script>
+</body>
+</html>

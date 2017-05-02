@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Ajax Get JQuery</h1>
+	<hr>
+
+	<select name="" id="marca">
+		<option value="0">selecione la marca de bicicletas</option>
+		<option value="1">volkswagen</option>
+		<option value="2">renault</option>
+		<option value="3">Cgevrolet</option>
+	</select>
+	<img src="imgs/animal.gif" alt="" id="loading">
+	<select name="" id="referencias" disabled>
+		
+	</select>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#loading').hide();
+			$('#marca').change(function(event) {
+				$marca= parseInt($(this).val());
+				if($marca > 0){
+					$.get('txt/marca.php',{ marca: $marca}, function(data) {
+						console.log(data);
+						$('#loading').show();
+						$('#referencias').hide();
+						setTimeout(function(){
+							$('#loading').hide();
+							$('#referencias').removeAttr('disabled');
+							$('#referencias').show().html(data);
+
+
+						},1000);
+					});
+				}else{
+					alert('debe selecionar una marca de bicicletas');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

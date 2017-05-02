@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Ajax JQuery</h1>
+	<hr>
+	<select name="" id="games" multiple>
+
+		
+	</select><button id="btnload">Cargar juegos</button>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			$('#btnload').click(function(event) {
+
+				$.ajax({
+				url: 'json/games.json',
+				type: 'post',
+				dataType: 'json'
+			
+			})	
+			.done(function(data) {
+				console.log("success");
+			    $('#games').empty();
+			    $.each(data, function(index,val){
+			    	$('#games').append('<option>'+val.name+'</option>');
+
+			    });
+			})
+			.fail(function() {
+				console.log("error");
+			})
+			.always(function() {
+				console.log("complete");
+			});
+			});
+
+
+
+			
+			
+		});
+	</script>
+
+</body>
+</html>

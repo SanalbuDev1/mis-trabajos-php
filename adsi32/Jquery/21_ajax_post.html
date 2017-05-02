@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body{
+			background-position: center center;
+			background-size:cover;
+			height: 100vh;
+		}
+	</style>
+	<h1>Ajax Post jquery</h1>
+	<hr>
+	<select name="" id="bgc">
+		<option value="">Selecione fondo de pantalla</option>
+		<option value="bg1">Imagen 1</option>
+		<option value="bg2">Imagen 1</option>
+		<option value="bg3">Imagen 1</option>
+	</select>
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#bgc').change(function(event) {
+				$bg =$(this).val();
+				alert($bg);
+			if ($bg != "") {
+$.post('txt/fondos.php',{bg: $bg},function(data,status,xhr){
+				if (status=="success") {
+					$('body').css('background',data);
+
+				}
+
+			});
+			}else{
+				alert("digite valor");
+			}
+			
+			});
+
+
+		});
+	</script>
+</body>
+</html>

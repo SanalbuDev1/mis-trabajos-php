@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+<style>
+	@font-face{
+		src: url("txt/Pokemon Hollow.ttf");
+		font-family: "Pokemon";
+	}
+	body{
+		margin:0px;
+		border:0px;
+		padding: 0px;
+		outline: none;
+		text-decoration: none;
+		font: 20px Pokemon;
+		
+	}
+	h1{
+		text-align: center;
+			
+		text-transform: uppercase;
+		
+	}
+	h2{
+			text-align: center;
+			line-height: 40px;
+			border-bottom: 2px solid orange;
+			
+	}
+	#h22){
+		border-bottom:2px solid red;
+	}
+	section#container{
+		width: 800px;
+	
+		display: block;
+		
+		background-color: 	rgba(31,34,153,0.6);
+		text-align: center;
+			
+	}
+
+	section#container article{
+		width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left:-10px;
+		background-color: #85FC79;
+		
+	}
+	section#contaniner article:first{
+		background-color: 	orange;
+	}
+	section#container article div{
+		width: 120px;
+		height:120px;
+		border:1px solid ;
+		margin:20px auto;
+		border-radius:50%;
+	}
+	
+	#pok1.pokev1{
+		background: green url(imgs/Pichu.png)no-repeat center center;
+		background-size: cover;
+	}
+	#pok1.pokev2{
+		background: green url(imgs/pikachu.png)no-repeat center center;
+		background-size: cover;
+	}
+	#pok1.pokev3{
+		background: green url(imgs/raichu.png)no-repeat center center;
+		background-size: cover;
+	}
+	#pok2.pokev1{
+		background: green url(imgs/magicar.png)no-repeat center center;
+		background-size: cover;
+
+	}
+	#pok2.pokev2{
+		background: green url(imgs/dratini.png)no-repeat center center;
+		background-size: cover;
+
+	}
+	#pok2.pokev3{
+		background: green url(imgs/garados.png) no-repeat center center;
+		background-size: cover;
+
+	}
+	#pok3.pokev1{
+		background: green url(imgs/cubone.png) no-repeat center center;
+		background-size: cover;
+
+	}
+#pok3.pokev2{
+		background: green url(imgs/marowak.png) no-repeat center center;
+		background-size: cover;
+
+	}
+#pok3.pokev3{
+		background: green url(imgs/Kangaskhan.png) no-repeat center center;
+		background-size: cover;
+
+	}
+
+	section#container article#seconde div,
+	section#container article#thirde div{
+		background: url(imgs/pok.png)no-repeat center center;
+		background-size: cover;
+		filter: grayscale(1);
+	}
+	section#container article#seconde div.active,
+	section#container article#thirde div.active{
+		background: url(imgs/pok.png)no-repeat center center;
+		background-size: cover;
+		filter: grayscale(0);
+	}
+
+	.pokemon:hover{
+		transition: all 1s ease-out;
+		background-color: 	green;
+		transform: scale(1.1);
+	}
+	.pokemon{
+		position: relative;
+		z-index: 1;
+
+	}
+	#seconde div{
+		z-index: 0;
+		text-align: center;
+			
+	}
+</style>
+	
+	<section id="container">
+		<h1>Pokemon evolution</h1>
+		<article id="firste">
+			<h2 id="h11">Primero evolucion</h2>
+			<div  id="pok1" class="pokemon pokev1"></div>
+			<div  id="pok2" class="pokemon pokev1"></div>
+			<div  id="pok3" class="pokemon pokev1"></div>
+		</article>
+		<article id="seconde">
+			<h2 id="h22">segunda evolucion</h2>
+			<div></div>
+			<div></div>
+			<div></div>
+		</article>
+		<article id="thirde">
+			<h2 id="h33">tercera evolucion</h2>
+			<div></div>
+			<div></div>
+			<div></div>
+		</article>
+	</section>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('div.pokemon').draggable({
+				cursor : 'move',
+				revert:  'invalid',
+				snap: 'section#container article div',
+				containment: 'section#container',
+
+				drag: function(){
+					if ($(this).hasClass('pokev1')) {
+						$("#seconde div").addClass('active');
+					}
+				},
+				stop: function(){
+					$("#seconde div").removeClass('active');
+				}
+			})
+			$('#seconde div').droppable({
+				accept: ".pokev1",
+				drop: function(e,ui){
+
+					$(ui.draggable).removeClass('pokev1').addClass('pokev2')
+
+				}
+			})
+			$('#thirde div').droppable({
+				accept: ".pokev2",
+				drop: function(e,ui){
+					$(ui.draggable).removeClass('pokev2').addClass('pokev3');
+				}
+			})
+		});
+	</script>
+</body>
+</html>

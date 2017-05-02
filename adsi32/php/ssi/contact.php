@@ -1,0 +1,3 @@
+<h1>Contact</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quo, ea commodi, porro id laboriosam ducimus, veniam labore quia ad laudantium repudiandae corporis. Facere odit error voluptate dicta tempora quam.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aliquid voluptates sapiente doloremque impedit accusamus, quis vero dolor nihil hic nobis expedita laboriosam fugiat commodi deserunt harum, sint quia ut.</p>
