@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Anton|Orbitron');
+		*{
+			font-family: 'Orbitron', sans-serif;
+		}
+		body{
+			background: gray;
+		}
+		table{
+			margin: 100px auto;
+			background-color: white;
+			width: 1000px;
+			height: 200px;	
+			border:10px solid black;
+		}
+		tr{
+			
+		}
+		td{
+			text-align: center;
+				
+		}
+		button{
+			background-color: 	#D69494;
+		}
+		button a{
+			text-decoration: none;	
+		}
+		div{
+			width: 100%;
+			background-color: 	#B99494;
+			height: 40px;
+			margin: 0;			
+		}
+		div a{
+			display: inline-block;
+			margin-left:600px;
+			text-decoration: none;
+			text-align: center;
+			line-height: 35px;	
+			color:  black;
+			
+						
+		}
+		div a:hover{
+			animation: 1s boton infinite;
+		}
+
+		@keyframes boton{
+			0%,100%{
+				transform: translateY(0px) scale(1.0);
+			}
+			50%{
+				transform: translateY(6px) scale(1.2);
+			}
+		}
+
+	</style>
+	
+	<div>
+		<a href="index.html">	Devolver al inicio</a>	
+	</div>
+	<form action="php/consultar_cliente.php" method="get">
+		<input type="text" placeholder="ingrese cedula" name="CC">
+		<input type="submit" value="consultar">
+
+	</form>
+
+
+</body>
+</html>

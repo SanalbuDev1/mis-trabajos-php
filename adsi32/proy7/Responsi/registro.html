@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/02.css">
+		
+	</head>
+	<body>
+	<section>	
+	            <a href="index.html"><p>Inicio</p></a>
+	</section>
+	
+	<form action="php/registro.php" method="post">
+		<h2>Registro</h2>
+		<input type="text" name="name" placeholder="Nombre Completo Cliente" required>
+		<input type="text" name="address" placeholder="correo "  required >
+		<input type="password" name="password" placeholder="contraseña" required>
+		<input type="text" name="telephone" placeholder="Telefono" required>
+		<input type="date" name="date"  required>
+		<textarea name="text1" placeholder="Escriba comentarios adicionales"></textarea>
+		<select name="select1" id="">
+			<option value="null">Selecione Banco</option>
+			<option value="Bancolombia">Bancolombia</option>
+			<option value="BBVA">BBVA</option>
+		</select>
+		
+		<input type="text" placeholder="Escriba el numero de targeta" name="target">
+		<input type="text" placeholder="Escriba el numero de seguridad" name="security">
+
+		
+
+		<input type="text" list="superheroes" name="list" placeholder="escriba su rol en la empresa" >
+		<select id="superheroes" name="rango">
+    		<option label="Admin" value="Admin">
+   			<option label="Empleado" value="Empleado">
+   			<option value="Veterinario">Veterinario</option>
+   			<option value="Provedor">Provedor</option>
+
+		</select>
+		<input type="submit" value="registrar" id="boton">
+		<input type="reset" value="borrar" id="boton">
+
+
+	</form>
+		
+	</body>
+	
+</html>

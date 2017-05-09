@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Index</title>
+			<link rel="stylesheet" href="CSS/fontello.css">
+			<link rel="stylesheet" href="CSS/menu.css">
+		</head>
+		<body>
+		<style>
+			section#productos {
+			display: block;
+	
+			height: 60px;
+			background-color: red;
+			margin:80px auto;
+			margin:100px 0px 20px 0px;
+		}
+		section.pr2{
+			overflow:scroll;
+			
+		}
+		section.pr2 div{
+			height: 300px;
+		}
+}
+		</style>
+			<header >
+			<div class="contenedor">
+				
+				<h1 class="icon-guidedog">My Pets</h1>
+				<h1 class="admin">Admin</h1>
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<input type="checkbox" id="menu-bar1">
+				<label class="icon-menu icon" for="menu-bar1"></label>
+				<nav class="menu">
+					<a href="javascript:;">Inicio</a>
+					<a href="registro.html">Registro</a>
+					<a href="nosotros.html">Nosotros </a>
+					<a href="contacto.html">Contactanos</a>
+
+				</nav>
+				<nav class="admin">
+					<section class="pr1"><div class="admin1"><h1 id="adm">Panel administrador</h1></div>	</section>
+					<section class="pr2">
+					<div class="act12">Clientes
+						
+						<a href="registro.html">Añadir cliente</a>
+						<a href="admin_consultar.html">Consultar cliente</a>
+						<a href="mod_emp.php">Modificar cliente</a>
+						<a href="eliminar cliente.html">Elimicar cliente</a>
+
+					</div>
+					<div class="act12">Provedores
+						<a href="registro.html">Añadir Provedores</a>
+						<a href="admin_consultar.html">Consultar Provedores</a>
+					</div>
+					<div class="act12">Veterinarios
+						<a href="registro.html">Añadir Veterinarios</a>
+						<a href="admin_consultar.html">Consultar Veterinarios</a>
+					</div>	
+					<div class="act13">Empleados
+						<a href="registro.html">Añadir empleados</a>
+						<a href="admin_consultar.html">Consultar Productos</a>
+					</div>
+					<div class="act13">producto
+						<a href="php/consultar.php">consultar</a>
+						<a href="php/modificar_p.php">modificar perros</a>
+					</div>
+					</section>
+					
+				</nav>
+
+			</div>
+			</header>
+			
+			<main>
+				<section id="banner">
+			<div id="login">
+			<div class="left1">
+				<p>Loguese</p>
+			</div>
+			<form id="form" action="">
+						<input type="text" placeholder="Ingrese su usuario">
+						<input type="text" placeholder="Ingrese su contraseña">
+						<button>aceptar</button>
+						<a href="recuperar.html">Olvido su contraseña</a>
+
+			</form>
+			</div>
+					<img src="IMGS/pri.jpg" alt="">
+					<div class="contenedor">
+						
+					</div>
+					
+				</section>
+
+				<section id="productos">
+					<nav>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</nav>
+					<h1 class="icon-guidedog"><a href="">compras</a></h1>
+				</section>
+
+				<section id="galeria">
+				<div class="left"></div>
+				<div class="right"></div>
+					<div id="carro" class="fotos">
+						
+					</div>
+				</section>
+					<section class="primero">
+						
+					</section>
+					<section class="segundo">
+						
+					</section>
+				<script>
+
+		var sprite = document.getElementById('carro');
+		var na=1;
+		setInterval(function() {
+			//sprite.classList.removeALL();
+			sprite.className= '';
+			sprite.classList.add('fotos'+na);
+			if(na==2) na=1;
+			else na++;
+		},2000);
+
+	</script>
+			</main>
+		</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+	vertical-align: top;
+		
+}
+section#coker1{
+	display: none;
+	margin: 0px auto;
+	width: 100%;
+	height: 880px;
+	background: rgba(0,0,0,0.4);
+	z-index:70;
+}
+section#coker1 div.perritos{
+	width: 540px;
+	height: 400px;
+	background-color: white;
+	display: inline-block;
+	margin: 15px 10px;
+
+
+	
+}
+div.perr{
+	
+	width: 95%;
+	height: 95%;
+	margin-left:140px;
+	position: absolute;
+	top:610px;
+	z-index:0;
+}
+div.per1{
+
+	margin:0;
+	width: 100%;
+	height: 300px;
+	background: white url(../IMGS/coker1.png)no-repeat center center;
+	
+}
+div.per2{
+	margin:0;
+	width: 100%;
+	height: 300px;
+	background: white url(../IMGS/coker2.png)no-repeat center center;
+	
+}
+div.per3{
+	margin:0;
+	width: 100%;
+	height: 300px;
+	background: white url(../IMGS/coker3.png)no-repeat center center;
+	
+}
+div.per4{
+	margin:0;
+	width: 100%;
+	height: 300px;
+	background: white url(../IMGS/coker4.png)no-repeat center center;
+	
+}
+#coker1:target{
+	display: block;
+		
+}
+p.p1{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+p.precio1{
+	margin: 8px 30px;
+	font-size: 32px;
+	font-weight: bold;
+	display: inline-block;
+		
+}
+button{
+	margin-left:20px;
+	width: 20%;	
+	transition: all 0.5s;
+}
+.pp1 button:hover{
+	background: white;
+	width: 22%;	
+	transition: all 0.5s;
+}
+button a.comprar{
+	z-index: 1;
+	display: inline-block;
+	text-decoration: none;
+	height: 55px;	
+	line-height: 50px;	
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+nav#comprar{
+	display: none;
+	z-index:50;
+	width: 100%;	
+	height: 70%;	
+	background: white;
+	z-index: 3;
+	
+	
+}
+nav#comprar form h1{
+	margin-left:150px;
+	margin-bottom: 10px;
+	color:white;
+		
+}
+nav#comprar form button{
+	display: block;
+	margin:auto;
+	padding: 20px;	
+}
+nav#comprar form button a{
+	display: block;
+	
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+		
+				
+}
+
+.boton1{
+		display: block;
+		margin:0 auto;	
+		margin-bottom: 10px;
+		padding: 10px;
+		width: 90%;		
+
+}
+form{
+	width: 600px;	
+	height: 400px;	
+	background-color: 	gray;
+	margin:auto;
+}	
+
+#comprar:target {
+	display: block;
+	
+		
+}

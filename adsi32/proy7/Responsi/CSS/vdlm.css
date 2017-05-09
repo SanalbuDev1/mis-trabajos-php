@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Orbitron');
+@import url(banner.css);
+@import url(productos.css);
+@import url(contactanos.css);
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  vertical-align: top;
+  	
+  
+}
+article.imagen{
+	width: 100%;
+	height: 600px;
+	margin-bottom:200px;
+
+	
+}
+#img{
+	background: transparent url(../IMGS/vdlm7.jpg)no-repeat center 0px;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+
+}
+header{
+	width: 100%;	
+	height: 45px;	
+	background: blue;
+	position: fixed;
+	color: #fff;
+	top:0;
+  	left:0;
+ 	z-index: 108;
+		
+}
+input{
+	display: none;
+	
+}
+div.contenedor {
+	width: 98%;	
+	margin: auto;
+	display: table;
+		
+}
+div.contenedor #menu-bar{
+	display: none;
+		
+}
+h1{
+	float: left;
+}
+header div.contenedor label{
+	float: right;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 0px;
+    transition: all 0.5s;
+}
+header div.contenedor label:hover{
+    color: 	black;
+    font-size: 40px;
+    transform: translateY(-8px);
+}
+
+nav.menu{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;	
+	height: 100vh;	
+	background: rgba(51,51,51,0.6);
+	top:45px;
+  	left:0px;
+  	transition: all 0.5s;
+	transform: translateX(-100%);
+
+	
+		
+}
+nav.menu a{
+	display: block;
+	color:white;
+	height: 50px;	
+	text-decoration: none;
+	padding: 10px ;
+	border-bottom: 1px solid rgba(255,0,0,0.5);
+  	z-index: 101;
+				
+		
+}
+nav.menu a:hover{
+	background: rgba(0,0,0,0.1);
+				
+		
+}
+#menu-bar:checked ~.menu{
+	transform: translateX(0px);
+}
+
+section{
+  width: 100%;
+  margin-bottom: 25px;
+}
+input#menu-bar1{
+	background-color: black;
+}
+div.left1{
+	background-color: rgba(53,75,206,0.4);
+}
+section#productos{
+	background-color: 	blue;
+}
+section#productos nav a{
+	background-color: blue;
+}
+section#shipsu1{
+	width: 100%;	
+	height: 900px;	
+	background-color: 	rgba(0,0,0,0.4);
+	border: 1px solid;
+}
+section#shipsu1 div.perr{
+	width: 90%;	
+	height: 90%;	
+	margin:40px auto;
+		
+		
+}
+section#shipsu1 div.perr div{
+	width: 400px;	
+	height: 400px;	
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 4px;
+		
+		
+}
+section#shipsu1 div.perr div.pp1 div.per1{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm1.JPG)no-repeat 0px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.pp2 div.per2{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm2.jpg)no-repeat 0px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.pp3 div.per3{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm3.jpg)no-repeat -40px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.pp4 div.per4{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm4.jpg)no-repeat 0px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.pp5 div.per5{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm5.jpg)no-repeat 0px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.pp6 div.per6{
+	width: 100%;	
+	height: 300px;	
+	background: transparent url(../IMGS/vdlm6.jpg)no-repeat 0px 0px;
+	background-size: cover; 
+			
+}
+section#shipsu1 div.perr div.perritos p{
+	text-align: center;
+	font-weight: bold; 
+			
+}
+section#shipsu1 div.perr div.perritos p.precio1{
+	font-size: 30px;
+			
+}
+section#shipsu1 div.perr div.perritos button{
+	display: block;
+	margin:auto;
+ 	width: 200px;	
+}
+section#shipsu1 div.perr div.perritos button a{
+	color:blue;
+	text-decoration: none;
+				
+}
+section#shipsu1 div.perr div.pp2 div.per2{
+	width: 100%;	
+	height: 300px;	
+	background-color: 	black;
+
+		
+		
+}
+
+section#shipsu1 div.perr div.pp3 div.per3{
+	width: 100%;	
+	height: 300px;	
+		background-color: 	black;
+
+		
+		
+}
+
+section#shipsu1 div.perr div.pp4 div.per4{
+	width: 100%;	
+	height: 300px;	
+		
+	background-color: 	black;
+
+		
+		
+}
+section#shipsu1 div.perr div.pp5 div.per5{
+	width: 100%;	
+	height: 300px;	
+	
+	background-color: 	black;
+
+		
+		
+}
+section#shipsu1 div.perr div.pp6 div.per6{
+	width: 100%;	
+	height: 300px;	
+	
+	background-color: 	black;
+
+		
+		
+}
+

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Orbitron');
+*{
+	vertical-align: top;
+
+		
+}
+div.contactanos{
+	color:white;
+	height: 600px;
+	width: 100%;
+	background-color: #212121;
+	display: inline-block;
+		
+}
+div.contactanos section:first-child{
+	display: inline-block;
+	width: 40%;	
+	margin: 0px 40px;
+	height: 100%;	
+	
+}
+section.caja2{
+	display: inline-block;
+	width: 40%;
+	margin:0px 20px;
+	
+	height: 100%;
+}
+h1.cont{
+	
+		
+	text-align: center;
+	font:80px 'Orbitron';
+}
+div.caja11{
+	display: block;
+	margin:40px auto;
+	margin-bottom: 40px;
+}
+h2.mensaje{
+	background: url(../IMGS/mensaje.png)no-repeat center center;
+
+}
+h2.telefono{
+	background: url(../IMGS/telefono.png)no-repeat center center;
+	height: 40px;	
+	
+}
+div#mapa{
+	width: 80%;
+	height: 200px;
+	margin:20px 20px;
+}
+section.caja2 h3{
+	margin:100px auto;
+}
+form.contac{
+	display: block;
+	margin: 30px auto;
+	color: black;
+	width: 50%;
+	height: 300px;
+	text-align: center;
+		
+	background: orange;
+	display: block;
+	
+}
+input,textarea{
+	display: block;
+	margin:auto
+	color:black;
+	margin:2px 5px;
+	
+}
+input:last-child{
+	display: block;
+	text-align: center;
+	margin:auto;
+}
+textarea{
+	margin:0px 36px;
+}

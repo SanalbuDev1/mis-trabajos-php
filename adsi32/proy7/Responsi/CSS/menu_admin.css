@@ -1,0 +1,69 @@
+nav.admin{
+	
+	transform: translateX(-110%);
+	height: 100vh;
+	margin-top: 50px;
+	transition:all 0.5s ;
+	width: 100%;
+	position:absolute;
+	z-index:0;
+	
+
+	
+		
+}
+.icon{
+	margin:0px 300px;
+	color:white;
+	position: absolute;
+	left:0px;
+}
+#menu-bar1:checked ~.admin{
+	
+	font-weight: bold;
+	transform: translateX(-10px);
+	transition:all 0.5s ;
+	
+}
+h1.admin{
+	margin:3px 145px;
+	color:black;
+}
+h1#adm{
+	margin:240px 25px;
+	text-align: center;
+	font-size:50px;
+		
+}
+section.pr1{
+	width: 30%;	
+	height: 100%;	
+	background-color: 	rgba(0,0,0,0.6);
+	display: inline-block;
+		
+}
+section.pr2{
+	display: inline-block;
+	width: 70%;	
+	height: 100%;	
+	background-color: 	rgba(255,255,255,0.6);
+	float:right;
+			
+}
+section.pr2 div{
+	margin:15px 0px 5px;
+	width: 100%;	
+	height: 160px;	
+	background-color: 	rgba(255,0,0,0.3);
+	text-align: center;
+	font-size:50px;
+		
+
+}
+section.pr2 div a{
+	display: block;
+	text-decoration: none;
+	margin:0px auto;
+	font-size: 30px;
+	color:black;
+}

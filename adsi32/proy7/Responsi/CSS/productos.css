@@ -1,0 +1,36 @@
+section#productos {
+	display: block;
+	
+	height: 60px;
+	background-color: red;
+	margin:80px auto;
+	margin:400px 0px 20px 0px;
+
+}
+section#productos nav{
+	height: 60px;	
+	margin:0px auto;
+	width: 80%;
+	
+}
+section#productos nav a{
+	display: inline-block;
+	flex-wrap: wrap;  
+	width: 15%;
+	text-decoration: none;
+	text-align: center;
+	background-color: red;
+	margin-left:40px;
+	font-size: 20px;
+	color:white;
+}
+section#productos h1{
+	display: block;
+	color:black;
+	float:right;
+	transform: translateY(-45px) translateX(-10px);
+}
+section#productos h1 a{
+	text-decoration: none;
+	color: black;
+}

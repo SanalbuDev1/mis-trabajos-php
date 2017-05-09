@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/compras.css">
+</head>
+<body>
+	<div class="inicio"><a href="index_e.html">volver al inicio</a></div>	
+	<div><h1>formulario compra</h1>
+		
+		<form action="php/comprar.php" method="get">
+			<input type="text" placeholder="Nombre Completo" name="name" maxlength="50">
+			<input type="text" placeholder="Apellidos" name="last_name" maxlength="50">
+			<h2>fecha de nacimiento</h2>
+			<input type="date" placeholder="" name="date1">
+			<input type="text" name="target" placeholder="Targeta de credito" min="00000000000" max="99999999999">
+			<input type="text" name="security" placeholder="Codigo de seguridad" min="000" max="999">
+			<input type="number" name="code" placeholder="cantidad" max="10" min="1">
+			<select name="raza" id="">
+				<option value="Samoyedo">Samoyedo</option>
+				<option value="Coke">Coker</option>
+				<option value="Vernes de la montaña">Vernes de la montaña</option>
+				<option value="shipsu">Shipsu</option>
+				<option value="adopcion">hermosos crioyos</option>
+
+
+
+
+			</select>
+			<button><a href=""></a>Comprar</button>
+		</form>
+	</div>
+
+</body>
+</html>
