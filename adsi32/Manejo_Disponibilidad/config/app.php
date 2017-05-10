@@ -1,5 +1,5 @@
 <?php 
-	$base_url = 'http://localhost/Manejo_Disponibilidad/';
+	$base_url = 'http://localhost/adsi32/Manejo_Disponibilidad/';
 	$base_css = $base_url.'css/';
 	$base_js = $base_url.'js/';
 	$base_imgs = $base_url.'imgs/';
