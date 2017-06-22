@@ -30,7 +30,7 @@
 
 	//clase concreta
 
-	class Usuarios extends BaseDatos(){
+	class Usuarios extends BaseDatos{
 		public function __construct(){
 			parent::conexion();
 		}

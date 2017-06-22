@@ -27,7 +27,8 @@
 	}
 
 $pc = new Persona_computer("AMD_A8" , "8GB" , "1TERA");
+
 //echo $pc->getPc(); Los metodos estaticos no pueden reconocer los atributos de la clase
 
-//echo Persona_computer::setInfoPc("AMD A8" , "16GB" , "4TERA");
+echo Persona_computer::setInfoPc("AMD A8" , "16GB" , "4TERA");
 
